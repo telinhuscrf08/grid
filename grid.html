@@ -1,0 +1,132 @@
+<html>
+<head>
+    <title>Grid Layout</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+        }
+
+        .pagina {
+            display: grid;
+
+            grid-template-columns: 200px 1fr;
+            grid-template-rows: 50px 210px 190px 100px;
+
+            grid-template-areas:
+                "navbar navbar"
+                "sidebar main"
+                "sidebar content"
+                "sidebar footer";
+
+            gap: 5px;
+
+            height: 100vh;
+        }
+
+
+        .navbar {
+            grid-area: navbar;
+            background-color: #a8f5df;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        .sidebar {
+            grid-area: sidebar;
+            background-color: #13dfe5;
+
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+
+        .main {
+            grid-area: main;
+            background-color: #78e9e9;
+
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+
+        .conteudos {
+            grid-area: content;
+
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 5px;
+        }
+
+
+        .conteudo {
+            background-color: #62eec4;
+
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+
+        .footer {
+            grid-area: footer;
+            background-color: #1edbb0;
+
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+        }
+    </style>
+
+</head>
+
+
+<body>
+
+    <div class="pagina">
+
+        <div class="navbar">
+            
+        </div>
+
+
+        <div class="sidebar">
+          
+        </div>
+
+
+        <div class="main">
+          
+        </div>
+
+
+        <div class="conteudos">
+
+            <div class="conteudo">
+                
+            </div>
+
+            <div class="conteudo">
+                
+            </div>
+
+            <div class="conteudo">
+            
+            </div>
+
+        </div>
+
+
+        <div class="footer">
+        </div>
+
+    </div>
+
+</body>
+
+</html>
